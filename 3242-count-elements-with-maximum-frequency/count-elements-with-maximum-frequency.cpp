@@ -30,7 +30,7 @@ public:
             freq[nums[i]]++;
         }
         int max=0;
-        int count=1;
+        int count;
         for(int i=0;i<101;i++){
             if(freq[i]>max){
                 max= freq[i];
