@@ -30,11 +30,11 @@ public:
             freq[nums[i]]++;
         }
         int max=0;
-        int count;
+        int count=1;
         for(int i=0;i<101;i++){
             if(freq[i]>max){
                 max= freq[i];
-                count=0;
+               count=0;
             }
             if(max==freq[i] && freq[i]!=0){
                 count++;
