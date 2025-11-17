@@ -21,7 +21,7 @@ public:
               i++;
             }
          }
-         else if(umap.size()== j-i+1 || j+1> umap.size())
+         else if(umap.size()== j-i+1 || j-i+1>umap.size() )
          {
            maxi = max(maxi, j-i+1);
          }
