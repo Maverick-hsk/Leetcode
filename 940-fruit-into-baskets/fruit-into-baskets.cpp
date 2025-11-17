@@ -18,7 +18,7 @@ public:
                 }
             }
 
-            maxi = max(maxi, j - i + 1);
+            maxi = max(maxi, j - i + 1); # since valid window (<=2 types)
             j++;
         }
         return maxi;
