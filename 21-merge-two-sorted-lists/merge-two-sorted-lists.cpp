@@ -11,8 +11,8 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        if(list1 == NULL && list2 != NULL) return list2;
-        else if(list1 != NULL and list2== NULL) return list1;
+        // if(list1 == NULL && list2 != NULL) return list2;
+        // else if(list1 != NULL and list2== NULL) return list1;
 
      ListNode* head = new ListNode(0);
      ListNode* curr = head;
