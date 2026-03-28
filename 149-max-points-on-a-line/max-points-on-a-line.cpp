@@ -9,7 +9,7 @@ public:
         for (int i = 0; i < n; i++) {
             int max_pts = 0;
 
-            map<pair<int, int>, int> mp;
+            unordered_map<string,int> mp;
             int duplicates = 0;
             int slope = 0;
             for (int j = i + 1; j < n; j++) {
@@ -33,9 +33,10 @@ public:
                     dx = 1;
                 }
 
-                mp[{dx, dy}]++;
+                string key = to_string(dx) + '#' + to_string(dy);
+                mp[key]++;
 
-                max_pts = max(max_pts, mp[{dx, dy}]);
+                max_pts = max(max_pts, mp[key]);
             }
 
             result = max(result, max_pts + duplicates + 1);
