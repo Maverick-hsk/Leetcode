@@ -13,7 +13,7 @@ class Solution {
 public:
     int maxi = INT_MIN;
     int diameterOfBinaryTree(TreeNode* root) {
-    int maxd = findmax(root, maxi);
+    findmax(root, maxi);
     return maxi;
     }
 
