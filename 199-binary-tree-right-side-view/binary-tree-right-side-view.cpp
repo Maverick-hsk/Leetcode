@@ -17,12 +17,10 @@ public:
         if(ds.size()==level){
             ds.push_back(node->val);
         }
-        if(node->right != NULL){
-            func(node->right, level+1,ds);
-        }
-        if(node->left != NULL){
-            func(node->left, level+1, ds);
-        }
+        
+        func(node->right, level+1,ds);
+        
+        func(node->left, level+1, ds);
     }
 
     vector<int> rightSideView(TreeNode* root) {
